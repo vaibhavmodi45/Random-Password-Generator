@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+  
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 100px;
+    margin-bottom: 150px;
+}
+
+.nav .nav-name {
+    transform: scale(1.10);
+}
+
+.nav #mode-switcher {
+    background-color: transparent;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav #mode-switcher:hover {
+    transform: scale(1.10);
+    
+}
+
+.responsive-box {
+    width: 700px; /* Set a base width */
+    height: 400px;
+    padding: 35px;
+    border-radius: 15px;
+    border: 5px solid #fff;
+    aspect-ratio: 1 / 1; /* Maintain square shape */
+    background-color: #202938; /* Example background color */
+    margin: 0 auto; /* Center horizontally */
+    position: relative; /* For positioning inside the viewport */
+}
+
+/* Make the box full height of the viewport */
+.responsive-box::before {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.parent .responsive-box .mainhead .whitehead{
+    color: #fff;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+.parent .responsive-box .mainhead .greenhead{
+    color: #4BE087;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-top: -12px;
+}
+
+.parent .responsive-box h5 {
+    color: #fff;
+    margin-top: 5px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+
+.parent .responsive-box #passwordbtn {
+    color: #fff;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: #4BE087;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.parent .responsive-box #passwordbtn:hover {
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+.parent .responsive-box hr {
+    color: #E8F1EB;
+    opacity: 50% !important;
+}
+
+.generatedpass {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    margin-top: 30px;
+}
